@@ -1,0 +1,129 @@
+[debug] [2026-09-26T20:22:35.421Z] ----------------------------------------------------------------------
+[debug] [2026-09-26T20:22:35.423Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Nabattera\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2026-09-26T20:22:35.423Z] CLI Version:   15.28.2
+[debug] [2026-09-26T20:22:35.423Z] Platform:      win32
+[debug] [2026-09-26T20:22:35.424Z] Node Version:  v24.20.0
+[debug] [2026-09-26T20:22:35.424Z] Detected Agent: unknown
+[debug] [2026-09-26T20:22:35.424Z] Time:          Sat Sep 26 2026 17:22:35 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2026-09-26T20:22:35.424Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-09-26T20:22:35.436Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Nabattera\Desktop\projetos\garcia
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2026-09-26T20:22:54.110Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2026-09-26T20:22:54.110Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2026-09-26T20:23:34.720Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-09-26T20:23:34.720Z] > authorizing via signed-in user (cont.caique@gmail.com)
+[debug] [2026-09-26T20:23:54.272Z] Checked if tokens are valid: false, expires at: 1788059910773
+[debug] [2026-09-26T20:23:54.272Z] Checked if tokens are valid: false, expires at: 1788059910773
+[debug] [2026-09-26T20:23:54.272Z] > refreshing access token with scopes: []
+[debug] [2026-09-26T20:23:54.274Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-09-26T20:23:54.274Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-09-26T20:23:54.580Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-09-26T20:23:54.580Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-09-26T20:23:54.600Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2026-09-26T20:23:54.600Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"garcia"}
+[debug] [2026-09-26T20:23:55.374Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2026-09-26T20:23:55.374Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_UNAVAILABLE","suggestedProjectId":"garcia-c297f"}
+[debug] [2026-09-26T20:24:17.007Z] Checked if tokens are valid: true, expires at: 1790457833581
+[debug] [2026-09-26T20:24:17.007Z] Checked if tokens are valid: true, expires at: 1790457833581
+[debug] [2026-09-26T20:24:17.008Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2026-09-26T20:24:17.008Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"garcia-c297f"}
+[debug] [2026-09-26T20:24:17.581Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2026-09-26T20:24:17.582Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_AVAILABLE","suggestedProjectId":"garcia-c297f"}
+[debug] [2026-09-26T20:24:29.971Z] Checked if tokens are valid: true, expires at: 1790457833581
+[debug] [2026-09-26T20:24:29.971Z] Checked if tokens are valid: true, expires at: 1790457833581
+[debug] [2026-09-26T20:24:29.971Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2026-09-26T20:24:29.971Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"garcia-c297f","name":"raquel garcia"}
+[debug] [2026-09-26T20:24:30.453Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2026-09-26T20:24:30.453Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/create_project.global.7838949069106798143"}
+[debug] [2026-09-26T20:24:30.453Z] Checked if tokens are valid: true, expires at: 1790457833581
+[debug] [2026-09-26T20:24:30.453Z] Checked if tokens are valid: true, expires at: 1790457833581
+[debug] [2026-09-26T20:24:30.454Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.7838949069106798143 [none]
+[debug] [2026-09-26T20:24:31.314Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.7838949069106798143 200
+[debug] [2026-09-26T20:24:31.314Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.7838949069106798143 {"name":"operations/create_project.global.7838949069106798143"}
+[debug] [2026-09-26T20:24:31.819Z] [Project Creation Poller] Retrying task index 0
+[debug] [2026-09-26T20:24:31.819Z] Checked if tokens are valid: true, expires at: 1790457833581
+[debug] [2026-09-26T20:24:31.819Z] Checked if tokens are valid: true, expires at: 1790457833581
+[debug] [2026-09-26T20:24:31.819Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.7838949069106798143 [none]
+[debug] [2026-09-26T20:24:32.087Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.7838949069106798143 200
+[debug] [2026-09-26T20:24:32.087Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.7838949069106798143 {"name":"operations/create_project.global.7838949069106798143"}
+[debug] [2026-09-26T20:24:33.102Z] [Project Creation Poller] Retrying task index 0
+[debug] [2026-09-26T20:24:33.102Z] Checked if tokens are valid: true, expires at: 1790457833581
+[debug] [2026-09-26T20:24:33.102Z] Checked if tokens are valid: true, expires at: 1790457833581
+[debug] [2026-09-26T20:24:33.102Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.7838949069106798143 [none]
+[debug] [2026-09-26T20:24:33.352Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.7838949069106798143 200
+[debug] [2026-09-26T20:24:33.352Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.7838949069106798143 {"name":"operations/create_project.global.7838949069106798143","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"928029976130","projectId":"garcia-c297f","lifecycleState":"ACTIVE","name":"raquel garcia","createTime":"2026-09-26T20:24:32.215Z"}}
+[debug] [2026-09-26T20:24:33.353Z] Checked if tokens are valid: true, expires at: 1790457833581
+[debug] [2026-09-26T20:24:33.353Z] Checked if tokens are valid: true, expires at: 1790457833581
+[debug] [2026-09-26T20:24:33.353Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/garcia-c297f:addFirebase [none]
+[debug] [2026-09-26T20:24:37.736Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/garcia-c297f:addFirebase 200
+[debug] [2026-09-26T20:24:37.737Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/garcia-c297f:addFirebase {"name":"operations/workflows/NzRlYWQwZWUtNDEzYS00NzVmLWEzOWEtOWI5ZDhiZDVmNTRi"}
+[debug] [2026-09-26T20:24:37.737Z] Checked if tokens are valid: true, expires at: 1790457833581
+[debug] [2026-09-26T20:24:37.737Z] Checked if tokens are valid: true, expires at: 1790457833581
+[debug] [2026-09-26T20:24:37.737Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzRlYWQwZWUtNDEzYS00NzVmLWEzOWEtOWI5ZDhiZDVmNTRi [none]
+[debug] [2026-09-26T20:24:42.861Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzRlYWQwZWUtNDEzYS00NzVmLWEzOWEtOWI5ZDhiZDVmNTRi 200
+[debug] [2026-09-26T20:24:42.861Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzRlYWQwZWUtNDEzYS00NzVmLWEzOWEtOWI5ZDhiZDVmNTRi {"name":"operations/workflows/NzRlYWQwZWUtNDEzYS00NzVmLWEzOWEtOWI5ZDhiZDVmNTRi"}
+[debug] [2026-09-26T20:24:43.364Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2026-09-26T20:24:43.364Z] Checked if tokens are valid: true, expires at: 1790457833581
+[debug] [2026-09-26T20:24:43.364Z] Checked if tokens are valid: true, expires at: 1790457833581
+[debug] [2026-09-26T20:24:43.364Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzRlYWQwZWUtNDEzYS00NzVmLWEzOWEtOWI5ZDhiZDVmNTRi [none]
+[debug] [2026-09-26T20:24:44.680Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzRlYWQwZWUtNDEzYS00NzVmLWEzOWEtOWI5ZDhiZDVmNTRi 200
+[debug] [2026-09-26T20:24:44.681Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzRlYWQwZWUtNDEzYS00NzVmLWEzOWEtOWI5ZDhiZDVmNTRi {"name":"operations/workflows/NzRlYWQwZWUtNDEzYS00NzVmLWEzOWEtOWI5ZDhiZDVmNTRi"}
+[debug] [2026-09-26T20:24:45.689Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2026-09-26T20:24:45.690Z] Checked if tokens are valid: true, expires at: 1790457833581
+[debug] [2026-09-26T20:24:45.690Z] Checked if tokens are valid: true, expires at: 1790457833581
+[debug] [2026-09-26T20:24:45.690Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzRlYWQwZWUtNDEzYS00NzVmLWEzOWEtOWI5ZDhiZDVmNTRi [none]
+[debug] [2026-09-26T20:24:46.951Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzRlYWQwZWUtNDEzYS00NzVmLWEzOWEtOWI5ZDhiZDVmNTRi 200
+[debug] [2026-09-26T20:24:46.951Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzRlYWQwZWUtNDEzYS00NzVmLWEzOWEtOWI5ZDhiZDVmNTRi {"name":"operations/workflows/NzRlYWQwZWUtNDEzYS00NzVmLWEzOWEtOWI5ZDhiZDVmNTRi"}
+[debug] [2026-09-26T20:24:48.957Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2026-09-26T20:24:48.957Z] Checked if tokens are valid: true, expires at: 1790457833581
+[debug] [2026-09-26T20:24:48.957Z] Checked if tokens are valid: true, expires at: 1790457833581
+[debug] [2026-09-26T20:24:48.957Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzRlYWQwZWUtNDEzYS00NzVmLWEzOWEtOWI5ZDhiZDVmNTRi [none]
+[debug] [2026-09-26T20:24:49.930Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzRlYWQwZWUtNDEzYS00NzVmLWEzOWEtOWI5ZDhiZDVmNTRi 200
+[debug] [2026-09-26T20:24:49.930Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzRlYWQwZWUtNDEzYS00NzVmLWEzOWEtOWI5ZDhiZDVmNTRi {"name":"operations/workflows/NzRlYWQwZWUtNDEzYS00NzVmLWEzOWEtOWI5ZDhiZDVmNTRi","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"garcia-c297f","projectNumber":"928029976130","displayName":"raquel garcia","name":"projects/garcia-c297f","resources":{"hostingSite":"garcia-c297f"}}}
+[info] 
+[info] === Your Firebase project is ready! ===
+[info] 
+[info] Project information:
+[info]    - Project ID: garcia-c297f
+[info]    - Project Name: raquel garcia
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/garcia-c297f/overview
+[info] 
+=== Hosting Setup
+[info] 
+[debug] [2026-09-26T20:29:00.885Z] ExitPromptError: User force closed the prompt with SIGINT
+    at Interface.sigint (C:\Users\Nabattera\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\@inquirer\core\dist\commonjs\lib\create-prompt.js:101:37)
+    at Interface.emit (node:events:514:28)
+    at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1343:18)
+    at ReadStream.onkeypress (node:internal/readline/interface:289:20)
+    at ReadStream.emit (node:events:526:24)
+    at emitKeys (node:internal/readline/utils:371:14)
+    at emitKeys.next (<anonymous>)
+    at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+    at ReadStream.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:567:12)
+[error] 
+[error] Error: An unexpected error has occurred.
