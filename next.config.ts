@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
   },
   basePath: isProd ? '/garcia' : '',
   assetPrefix: isProd ? '/garcia/' : '',
+  trailingSlash: true,
 };
 
 export default nextConfig;
