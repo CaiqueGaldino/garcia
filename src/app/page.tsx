@@ -95,7 +95,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.heroImageContainer}>
-            <img src="/images/img1.jpeg" alt="Dra. Raquel Garcia" className={styles.heroImage} />
+            <Image src="/images/img1.jpeg" alt="Dra. Raquel Garcia" fill style={{ objectFit: 'cover' }} className={styles.heroImage} />
           </div>
         </section>
 
@@ -161,13 +161,13 @@ export default function Home() {
           
           <div className={styles.galleryGrid}>
             <div className={styles.galleryItem}>
-              <img src="/images/img12.jpeg" alt="Espaço da Clínica - Solo" className={styles.galleryImage} />
+              <Image src="/images/img12.jpeg" alt="Espaço da Clínica - Solo" fill style={{ objectFit: 'cover' }} className={styles.galleryImage} />
             </div>
             <div className={styles.galleryItem}>
-              <img src="/images/img14.jpeg" alt="Espaço da Clínica - Piscina" className={styles.galleryImage} />
+              <Image src="/images/img14.jpeg" alt="Espaço da Clínica - Piscina" fill style={{ objectFit: 'cover' }} className={styles.galleryImage} />
             </div>
             <div className={styles.galleryItem}>
-              <img src="/images/img8.jpeg" alt="Espaço da Clínica - Equipamentos" className={styles.galleryImage} />
+              <Image src="/images/img8.jpeg" alt="Espaço da Clínica - Equipamentos" fill style={{ objectFit: 'cover' }} className={styles.galleryImage} />
             </div>
           </div>
         </section>
@@ -176,7 +176,7 @@ export default function Home() {
         <section id="especialidades" className={styles.section} style={{ backgroundColor: 'var(--background)' }}>
           <div className={styles.specialtiesGrid}>
             <div className={styles.specialtiesImage}>
-              <img src="/images/img20.jpeg" alt="Atendimento Especializado Aquático" className={styles.heroImage} />
+              <Image src="/images/img20.jpeg" alt="Atendimento Especializado Aquático" fill style={{ objectFit: 'cover' }} className={styles.heroImage} />
             </div>
             
             <div className={styles.specialtiesContentWrapper}>
