@@ -9,7 +9,8 @@ export function generateStaticParams() {
   }));
 }
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
+export default async function BlogPost(props: { params: Promise<{ slug: string }> }) {
+  const params = await props.params;
   const post = posts.find(p => p.slug === params.slug);
 
   const whatsappNumber = "5511999999999";
