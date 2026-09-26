@@ -9,6 +9,8 @@ import { posts } from "../data/posts";
 export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [showFloatingCta, setShowFloatingCta] = useState(false);
+  
+  const basePath = process.env.NODE_ENV === 'production' ? '/garcia' : '';
 
   const whatsappNumber = "5511999999999";
   const whatsappMessage = "Olá, gostaria de agendar uma avaliação com a Dra. Raquel Garcia.";
@@ -95,7 +97,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.heroImageContainer}>
-            <Image src="/images/img1.jpeg" alt="Dra. Raquel Garcia" fill style={{ objectFit: 'cover' }} className={styles.heroImage} />
+            <Image src={`${basePath}/images/img1.jpeg`} alt="Dra. Raquel Garcia" fill style={{ objectFit: 'cover' }} className={styles.heroImage} />
           </div>
         </section>
 
@@ -161,13 +163,13 @@ export default function Home() {
           
           <div className={styles.galleryGrid}>
             <div className={styles.galleryItem}>
-              <Image src="/images/img12.jpeg" alt="Espaço da Clínica - Solo" fill style={{ objectFit: 'cover' }} className={styles.galleryImage} />
+              <Image src={`${basePath}/images/img12.jpeg`} alt="Espaço da Clínica - Solo" fill style={{ objectFit: 'cover' }} className={styles.galleryImage} />
             </div>
             <div className={styles.galleryItem}>
-              <Image src="/images/img14.jpeg" alt="Espaço da Clínica - Piscina" fill style={{ objectFit: 'cover' }} className={styles.galleryImage} />
+              <Image src={`${basePath}/images/img14.jpeg`} alt="Espaço da Clínica - Piscina" fill style={{ objectFit: 'cover' }} className={styles.galleryImage} />
             </div>
             <div className={styles.galleryItem}>
-              <Image src="/images/img8.jpeg" alt="Espaço da Clínica - Equipamentos" fill style={{ objectFit: 'cover' }} className={styles.galleryImage} />
+              <Image src={`${basePath}/images/img8.jpeg`} alt="Espaço da Clínica - Equipamentos" fill style={{ objectFit: 'cover' }} className={styles.galleryImage} />
             </div>
           </div>
         </section>
@@ -176,7 +178,7 @@ export default function Home() {
         <section id="especialidades" className={styles.section} style={{ backgroundColor: 'var(--background)' }}>
           <div className={styles.specialtiesGrid}>
             <div className={styles.specialtiesImage}>
-              <Image src="/images/img20.jpeg" alt="Atendimento Especializado Aquático" fill style={{ objectFit: 'cover' }} className={styles.heroImage} />
+              <Image src={`${basePath}/images/img20.jpeg`} alt="Atendimento Especializado Aquático" fill style={{ objectFit: 'cover' }} className={styles.heroImage} />
             </div>
             
             <div className={styles.specialtiesContentWrapper}>
